@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid bg-success text-dark p-2 d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center text-dark text-decoration-none m-0 me-4" href="#">
+                <img src="image/Gemini_Generated_Image_1nppsi1nppsi1npp.png" alt="Logo" width="60" height="60">
+                <span class="ms-2 fw-bold">Shop Nhạc Cụ Nhất Thái</span>
+            </a>
+
+            <form class="d-flex m-0 me-auto" style="width: 350px;">
+            </form>
+
+            <ul class="nav d-flex m-0 align-items-center me-2">
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="">Khuyến Mãi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="">Sản Phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="">Đơn Hàng của bạn</a>
+                </li>
+                <div class="d-flex align-items-center gap-3 fs-5">
+                    <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-geo-alt"></i></a>
+                    <a href="#" class="text-dark position-relative">
+                        <i class="bi bi-bag"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="font-size: 10px;">
+                            0
+                        </span>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </header>
+    <div class="container-fluid bg-warning">
+        <ul class="nav">
+            <li class="nav-item">
+                <img src="image/" alt="">
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Guitar Bass</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Trống</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">DJ Producer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Guitar điện</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Piano điện</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container p-2">
+        <div class="row row-cols-5">
+            <div class="col border text-center p-2">
+                <div class="mb-3 category-img justify-content-center d-flex align-items-center" style="height: 150px;">
+                    <img src="image/drum.png" alt="">
+                </div>
+                <h5>Trống</h5>
+                <p>1 sản phẩm</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" id="show-8product">
+        </div>
+    </div>
+
+
+
+
+    <footer class="my-footer  bg-success text-dark p-2">
+        <h3 style="color: yellow;">SHOP NHẠC CỤ NHẤT THÁI</h3>
+        <p>Địa chỉ: Số 123 Đường ABC, TP. HCM</p>
+        <p>Điện thoại: 0123 456 789</p>
+        <p>&copy; 2026 Bản quyền thuộc về SHOP NHẠC CỤ NHẤT THÁI.</p>
+    </footer>
+
+
+
+
+    <script src="products.js"></script>
+    <script>
+        for (let i = 0; i < 9; i++) {
+            document.getElementById("show-8product").innerHTML +=
+                `<div class="col-md-3 ">
+                <div class="product p-2">
+                    <img src="image/${products[i].img}" alt="">
+                    <h3>${products[i].name}</h3>
+                    <p>${products[i].describe}/p>
+                    <h4>${products[i].price}</h4>
+                    <button type="button" class="btn btn-info">Mua ngay</button>
+                    <button type="button" class="btn btn-success" onclick="detail(${products[i].id})">Chi tiết</button>
+                </div>
+            </div>`
+        }
+
+        function detail(i) {
+            window.location.href = `detail.html?id=${i}`
+        }
+
+    </script>
+</body>
+
+</html>

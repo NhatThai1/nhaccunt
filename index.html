@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid bg-success text-dark p-2 d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center text-dark text-decoration-none m-0 me-4" href="#">
+                <img src="image/Gemini_Generated_Image_1nppsi1nppsi1npp.png" alt="Logo" width="60" height="60">
+                <span class="ms-2 fw-bold">Shop Nhạc Cụ Nhất Thái</span>
+            </a>
+
+            <form class="d-flex m-0 me-auto" style="width: 350px;">
+            </form>
+
+            <ul class="nav d-flex m-0 align-items-center me-2">
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="index.html">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="">Khuyến Mãi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="products.html">Sản Phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="">Giỏ Hàng</a>
+                </li>
+                <div class="d-flex align-items-center gap-3 fs-5">
+                    <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-geo-alt"></i></a>
+                    <a href="#" class="text-dark position-relative">
+                        <i class="bi bi-bag"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="font-size: 10px;">
+                            0
+                        </span>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </header>
+    <div class="container-fluid bg-warning">
+        <ul class="nav">
+            <li class="nav-item">
+                <img src="image/" alt="">
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Guitar Bass</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Trống</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">DJ Producer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Guitar điện</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Piano điện</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container p-2">
+        <div class="row">
+            <div class="banner">
+
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/a1.png" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/a2.png" alt="Chicago" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/a3.png" alt="New York" class="d-block w-100">
+                        </div>
+                    </div>
+
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <h1>Sản phẩm khuyến mãi</h1>
+        </div>
+        <div class="row" id="sell">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h1>Sản phẩm bán chạy</h1>
+        </div>
+        <div class="row" id="best-selling">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h1>Sản phẩm hot</h1>
+        </div>
+        <div class="row" id="product-hot">
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4 class="fw-bold text-uppercase">Nhạc Cụ Nhát Thái®</h4>
+                    <p class="text-secondary">
+                        Phong cách trẻ trung, năng động.
+                        Tự tin thể hiện cá tính của bạn.
+                    </p>
+
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-white">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h5 class="fw-bold">Danh mục sản phẩm</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                Guiatr điện
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                Guitarr bass
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                DJ
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                Trống
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h5 class="fw-bold">Hỗ trợ khách hàng</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                Hướng dẫn mua hàng
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                Chính sách đổi trả
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+    </footer>
+
+
+
+
+    <script src="products.js"></script>
+    <script>
+
+        let sell = products.filter(a => a.special == "sell");
+
+        let bestselling = products.filter(a => a.special == "best-selling");
+
+        let producthot = products.filter(a => a.special == "product-hot");
+
+
+        for (let i = 0; i < sell.length; i++) {
+            document.getElementById("sell").innerHTML +=
+                `<div class="col-md-3 ">
+                <div class="product p-2">
+                    <img src="image/${sell[i].img}" alt="">
+                    <h3>${sell[i].name}</h3>
+                    <p>${sell[i].describe}/p>
+                    <h4>${sell[i].price}</h4>
+                    <button type="button" class="btn btn-dark mt-auto">Mua ngay</button>
+                    <button type="button" class="btn btn-success" onclick="detail(${sell[i].id})">Chi tiết</button>
+                </div>
+            </div>`
+        }
+
+
+        for (let i = 0; i < bestselling.length; i++) {
+            document.getElementById("best-selling").innerHTML +=
+                `<div class="col-md-3 ">
+                <div class="product p-2">
+                    <img src="image/${bestselling[i].img}" alt="">
+                    <h3>${bestselling[i].name}</h3>
+                    <p>${bestselling[i].describe}</p>
+                    <h4>${bestselling[i].price}</h4>
+                    <button type="button" class="btn btn-dark mt-auto">Mua ngay</button>
+                    <button type="button" class="btn btn-success"  onclick="detail(${bestselling[i].id})">Chi tiết</button>
+                </div>
+            </div>`
+        }
+
+        for (let i = 0; i < producthot.length; i++) {
+            document.getElementById("product-hot").innerHTML +=
+                `<div class="col-md-3 ">
+                <div class="product p-2">
+                    <img src="image/${producthot[i].img}" alt="">
+                    <h3>${producthot[i].name}</h3>
+                    <p>${producthot[i].describe}</p>
+                    <h4>${producthot[i].price}</h4>
+                    <button type="button" class="btn btn-dark mt-auto">Mua ngay</button>
+                    <button type="button" class="btn btn-success"  onclick="detail(${producthot[i].id})">Chi tiết</button>
+                </div>
+            </div>`
+        }
+        function detail(i) {
+            window.location.href = `detail.html?id=${i}`
+        }
+
+    </script>
+</body>
+
+</html>
